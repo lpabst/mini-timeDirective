@@ -6,18 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
+<body ng-controller='mainCtrl'>
     
 
+Hello, {{ name }},
+<br>
+<show-time></show-time>
+<br>
+<input-field button-text='Alert Me' when-clicked='alerter(text)'></input-field>
+<input-field button-text='Log Me' when-clicked='logger(text)'></input-field>
 
 
-
-
-
-<script src=''></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 <script src='app.js'></script>
 <script src='mainCtrl.js'></script>
 <script src='timeDirective.js'></script>
+<script src='inputField.js'></script>
 
 </body>
 </html>
